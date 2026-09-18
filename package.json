@@ -1,0 +1,21 @@
+{
+  "name": "segment-generator",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Simple Segment Generator API",
+  "type": "module",
+  "engines": {
+    "node": "22.x"
+  },
+  "scripts": {
+    "dev": "node --watch --env-file=.env src/server.js",
+    "start": "node --env-file=.env src/server.js",
+    "start-seeding": "node database/seed.js && npm start",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "better-sqlite3": "^13.0.3",
+    "express": "^5.2.1",
+    "swagger-ui-express": "^5.0.1"
+  }
+}
